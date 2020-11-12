@@ -1,0 +1,53 @@
+/* will display for every header */
+header{
+    display: flex;
+}
+.logo{
+    height: 8em;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+.content{
+    display: flex;   
+}
+.fishList{
+    border: 1px solid cornflowerblue;
+    padding-left: 10px;
+}
+
+.quotes{
+    border: 1px solid green;
+}
+.locations{
+    border: 1px solid goldenrod;
+}
+.tankTips{
+    border: 1px solid yellowgreen;
+}
+.container{
+    border: 1px dotted lavender;
+}
+.container--left{
+    flex: 3;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.container--left article{
+    margin-bottom: 25px;
+}
+
+.container--right{
+    flex:1;
+}
+.fish__image{
+    height: 8em;
+}
+
+.location__image{
+    height: 8em;
+}
+

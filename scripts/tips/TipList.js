@@ -1,4 +1,4 @@
-/**TipList which renders individual tip objects as HTML*/
+/**TipList which renders individual tip objects as HTML and places on the DOM*/
 import { useTip } from './TipDataProvider.js'
 import { Tip } from './Tips.js' 
 

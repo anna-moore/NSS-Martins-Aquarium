@@ -45,9 +45,11 @@ body{
 }
 .fish__image{
     height: 8em;
+    width: 8em;
 }
 
 .location__image{
     height: 8em;
+    width: 8em;
 }
 

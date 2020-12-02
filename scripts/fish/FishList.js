@@ -15,17 +15,32 @@ export const FishList = () => {
     const soldier = soldierFish()
     const loser = nonHolyFish()
     //iterates through fish collect, translates objects to HTML, places HTML on DOM
-    for (const fishObject of holyFish){
-       const fishHTML = Fish(fishObject)
-       contentElement.innerHTML += fishHTML
-     } 
-     for (const fishObject of soldier){
-      const fishHTML = Fish(fishObject)
-      contentElement.innerHTML += fishHTML
-    }
-    for (const fishObject of loser){
-      const fishHTML = Fish(fishObject)
-       contentElement.innerHTML += fishHTML
-    }
+    // for (const fishObject of holyFish){
+    //    const fishHTML = Fish(fishObject)
+    //    contentElement.innerHTML += fishHTML
+    //  } 
+    //  for (const fishObject of soldier){
+    //   const fishHTML = Fish(fishObject)
+    //   contentElement.innerHTML += fishHTML
+    // }
+    // for (const fishObject of loser){
+    //   const fishHTML = Fish(fishObject)
+    //    contentElement.innerHTML += fishHTML
+    // }
 
+    contentElement.innerHTML += `
+    <article class= "fish>
+      ${holyFish.map(fishObject => Fish(fishObject)).join("")}
+      </article>
+   `
+   contentElement.innerHTML += `
+    <article class= "fish>
+      ${soldier.map(fishObject => Fish(fishObject)).join("")}
+      </article>
+   `
+   contentElement.innerHTML += `
+    <article class= "fish>
+      ${loser.map(fishObject => Fish(fishObject)).join("")}
+      </article>
+   `
 }
